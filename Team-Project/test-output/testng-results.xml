@@ -2,42 +2,42 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-02-08T16:35:28 IST" name="Suite" finished-at="2023-02-08T16:35:54 IST" duration-ms="25880">
+  <suite started-at="2023-02-08T18:33:34 IST" name="Default suite" finished-at="2023-02-08T18:33:50 IST" duration-ms="15948">
     <groups>
     </groups>
-    <test started-at="2023-02-08T16:35:28 IST" name="Test" finished-at="2023-02-08T16:35:54 IST" duration-ms="25880">
+    <test started-at="2023-02-08T18:33:34 IST" name="Default test" finished-at="2023-02-08T18:33:50 IST" duration-ms="15948">
       <class name="com.ab.testLayer.test">
-        <test-method is-config="true" signature="start()[pri:0, instance:com.ab.testLayer.test@50378a4]" started-at="2023-02-08T16:35:28 IST" name="start" finished-at="2023-02-08T16:35:29 IST" duration-ms="491" status="PASS">
+        <test-method is-config="true" signature="start()[pri:0, instance:com.ab.testLayer.test@6356695f]" started-at="2023-02-08T18:33:34 IST" name="start" finished-at="2023-02-08T18:33:35 IST" duration-ms="150" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- start -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.ab.testLayer.test@50378a4]" started-at="2023-02-08T16:35:29 IST" name="launchApplication" finished-at="2023-02-08T16:35:43 IST" duration-ms="13826" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:com.ab.testLayer.test@6356695f]" started-at="2023-02-08T18:33:35 IST" name="launchApplication" finished-at="2023-02-08T18:33:40 IST" duration-ms="5658" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="Test1()[pri:0, instance:com.ab.testLayer.test@50378a4]" started-at="2023-02-08T16:35:43 IST" name="Test1" finished-at="2023-02-08T16:35:53 IST" duration-ms="10131" status="FAIL">
+        <test-method signature="Test1()[pri:0, instance:com.ab.testLayer.test@6356695f]" started-at="2023-02-08T18:33:40 IST" name="Test1" finished-at="2023-02-08T18:33:50 IST" duration-ms="10093" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"span.mark"}
   (Session info: MicrosoftEdge=109.0.1518.78)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.7.2', revision: '4d4020c3b7'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [9fdf34d41f64c7d37a72840897ee32d9, findElement {using=css selector, value=span.mark}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 109.0.1518.78, ms:edgeOptions: {debuggerAddress: localhost:49829}, msedge: {msedgedriverVersion: 109.0.1518.78 (4e4b32c38163..., userDataDir: C:\Users\HP\AppData\Local\T...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49829/devtoo..., se:cdpVersion: 109.0.1518.78, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 9fdf34d41f64c7d37a72840897ee32d9]]>
+Command: [fe84bdcfd4f972db5cd052ecf50d847b, findElement {using=css selector, value=span.mark}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 109.0.1518.78, ms:edgeOptions: {debuggerAddress: localhost:58141}, msedge: {msedgedriverVersion: 109.0.1518.78 (4e4b32c38163..., userDataDir: C:\Users\INTEL\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58141/devtoo..., se:cdpVersion: 109.0.1518.78, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fe84bdcfd4f972db5cd052ecf50d847b]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"span.mark"}
   (Session info: MicrosoftEdge=109.0.1518.78)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: '4.7.2', revision: '4d4020c3b7'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.2'
 Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [9fdf34d41f64c7d37a72840897ee32d9, findElement {using=css selector, value=span.mark}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 109.0.1518.78, ms:edgeOptions: {debuggerAddress: localhost:49829}, msedge: {msedgedriverVersion: 109.0.1518.78 (4e4b32c38163..., userDataDir: C:\Users\HP\AppData\Local\T...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49829/devtoo..., se:cdpVersion: 109.0.1518.78, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 9fdf34d41f64c7d37a72840897ee32d9
+Command: [fe84bdcfd4f972db5cd052ecf50d847b, findElement {using=css selector, value=span.mark}]
+Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 109.0.1518.78, ms:edgeOptions: {debuggerAddress: localhost:58141}, msedge: {msedgedriverVersion: 109.0.1518.78 (4e4b32c38163..., userDataDir: C:\Users\INTEL\AppData\Loca...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58141/devtoo..., se:cdpVersion: 109.0.1518.78, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: fe84bdcfd4f972db5cd052ecf50d847b
 at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
@@ -89,15 +89,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Test1 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ab.testLayer.test@50378a4]" started-at="2023-02-08T16:35:54 IST" name="tearDown" finished-at="2023-02-08T16:35:54 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.ab.testLayer.test@6356695f]" started-at="2023-02-08T18:33:50 IST" name="tearDown" finished-at="2023-02-08T18:33:50 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="end()[pri:0, instance:com.ab.testLayer.test@50378a4]" started-at="2023-02-08T16:35:54 IST" name="end" finished-at="2023-02-08T16:35:54 IST" duration-ms="8" status="PASS">
+        <test-method is-config="true" signature="end()[pri:0, instance:com.ab.testLayer.test@6356695f]" started-at="2023-02-08T18:33:50 IST" name="end" finished-at="2023-02-08T18:33:50 IST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- end -->
       </class> <!-- com.ab.testLayer.test -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

@@ -5,6 +5,8 @@
     <classes>
       <class name="com.ab.testLayer.test">
         <methods>
+          <include name="start"/>
+          <include name="end"/>
           <include name="launchApplication"/>
           <include name="tearDown"/>
           <include name="Test1"/>
