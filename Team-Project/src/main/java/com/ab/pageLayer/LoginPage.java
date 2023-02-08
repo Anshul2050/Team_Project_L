@@ -11,13 +11,34 @@ public class LoginPage {
 		
 		PageFactory.initElements(driver, this);
 	}
-	//---------
-	@FindBy(css = "span.mark")
-	WebElement dashBoard;
-	public void dashBoard() {
-		
-		
-		dashBoard.click();
+//---------Object creation------------------------------
+	@FindBy(xpath = "//a[text()='Log in']")
+	private WebElement login_btn;
+	
+	@FindBy(xpath ="//input[@id='Email']")
+	private WebElement email_txtbx;
+	
+	@FindBy(xpath = "//input[@id='Password']")
+	private WebElement password_txtbx;
+	@FindBy(xpath = "//button[text()='Log in']")
+	private WebElement login_btn1;
+//----------methods-----------------------------------------
+	public void clickOnLoginButton()
+	{
+		login_btn.click();
 	}
-
+	public void enterEmailID(String email)
+	{
+		email_txtbx.sendKeys(email);
+		
+	}
+	public void enterPassword(String password)
+	{
+		password_txtbx.sendKeys(password);
+	}
+	public void clickOnLoginButton1()
+	{
+		login_btn1.click();
+	}
+	
 }

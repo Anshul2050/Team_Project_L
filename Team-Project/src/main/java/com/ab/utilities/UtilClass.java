@@ -3,6 +3,7 @@ package com.ab.utilities;
 import java.io.File;
 import java.io.IOException;
 
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.io.FileHandler;
@@ -36,9 +37,13 @@ public class UtilClass extends BaseTest {
 	}
 	
 	public void waitTillVisible(int duration) {
-		
-		
-		
+			
+	}
+	
+	public void scrollByMethod()
+	{
+		JavascriptExecutor js = (JavascriptExecutor)driver;
+    	js.executeScript("window.scrollBy(0,250)");
 	}
 	
 	
