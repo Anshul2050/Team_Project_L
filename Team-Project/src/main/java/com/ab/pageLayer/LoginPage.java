@@ -11,7 +11,7 @@ public class LoginPage {
 		
 		PageFactory.initElements(driver, this);
 	}
-	
+	//This is login page functionality check
 	@FindBy(css = "span.mark")
 	WebElement dashBoard;
 	public void dashBoard() {
