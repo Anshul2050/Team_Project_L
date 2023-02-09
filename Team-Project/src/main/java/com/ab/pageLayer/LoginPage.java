@@ -41,4 +41,9 @@ public class LoginPage {
 		login_btn1.click();
 	}
 	
+	public void dashBoard() {
+		
+		
+	}
+	
 }
