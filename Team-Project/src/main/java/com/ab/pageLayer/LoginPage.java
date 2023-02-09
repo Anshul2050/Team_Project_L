@@ -11,7 +11,7 @@ public class LoginPage {
 		
 		PageFactory.initElements(driver, this);
 	}
-//---------Object creation------------------------------
+
 	@FindBy(xpath = "//a[text()='Log in']")
 	private WebElement login_btn;
 	
@@ -22,7 +22,7 @@ public class LoginPage {
 	private WebElement password_txtbx;
 	@FindBy(xpath = "//button[text()='Log in']")
 	private WebElement login_btn1;
-//----------methods-----------------------------------------
+
 	public void clickOnLoginButton()
 	{
 		login_btn.click();
