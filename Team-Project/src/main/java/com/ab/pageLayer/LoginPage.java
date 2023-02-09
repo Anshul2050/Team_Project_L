@@ -11,6 +11,15 @@ public class LoginPage {
 		
 		PageFactory.initElements(driver, this);
 	}
+	
+	//This is login page functionality check
+		@FindBy(css = "span.mark")
+		WebElement dashBoard;
+		public void dashBoard() {
+			
+			
+			dashBoard.click();
+		}
 
 	@FindBy(xpath = "//a[text()='Log in']")
 	private WebElement login_btn;
@@ -41,9 +50,6 @@ public class LoginPage {
 		login_btn1.click();
 	}
 	
-	public void dashBoard() {
-		
-		
-	}
+
 	
 }
