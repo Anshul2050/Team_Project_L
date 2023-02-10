@@ -1,0 +1,12 @@
+package com.ab.testLayer;
+
+import com.ab.BaseTest_team.BaseTest;
+import com.ab.pageLayer.RegisterPage;
+
+public class RegisterationPageTest extends BaseTest {
+	
+	RegisterPage register_obj = new RegisterPage(driver);
+	
+	register_obj.ClickonRegisterButton();
+
+}

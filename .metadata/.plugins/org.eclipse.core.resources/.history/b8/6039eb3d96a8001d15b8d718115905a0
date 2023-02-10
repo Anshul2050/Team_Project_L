@@ -1,0 +1,32 @@
+package com.ab.testLayer;
+
+import org.testng.annotations.Test;
+
+import com.ab.BaseTest_team.BaseTest;
+
+
+public class RegistrationPageTest extends BaseTest {
+	
+	@Test
+	public void RegisterwithCorrectCredentials() throws InterruptedException
+	{
+		register_obj.ClickonRegisterButton();
+		Thread.sleep(2000);
+		register_obj.SelectGender();
+		register_obj.EnterFirstName();
+		register_obj.EnterLastName();
+		util_obj.scrolldown();
+		
+		register_obj.ClickonDOB();
+		register_obj.ClickonDOM();
+		register_obj.ClickonDOY();
+		register_obj.EnterEmail();
+		
+		util_obj.scrolldown();
+		
+		
+	
+	}
+	
+}
+

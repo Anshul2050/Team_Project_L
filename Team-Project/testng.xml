@@ -8,6 +8,7 @@
   <test thread-count="5" name="Test">
   <classes>
     <class name="com.ab.testLayer.test"></class>
+    <class name="com.ab.testLayer.RegistrationPageTest"/>
   </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

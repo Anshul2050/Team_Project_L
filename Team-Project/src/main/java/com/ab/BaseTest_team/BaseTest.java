@@ -2,7 +2,6 @@ package com.ab.BaseTest_team;
 
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.time.Duration;
 import java.util.Properties;
@@ -21,6 +20,7 @@ import org.testng.annotations.BeforeTest;
 import com.ab.pageLayer.LoginPage;
 import com.ab.pageLayer.Product_StoreDemoPage;
 import com.ab.pageLayer.RegisterPage;
+import com.ab.utilities.UtilClass;
 
 public class BaseTest {
 	public LoginPage login_obj ;
@@ -29,6 +29,7 @@ public class BaseTest {
 	public RegisterPage register_obj;
 	public Product_StoreDemoPage pro_sdpObj;
 	public Logger logger;
+	public UtilClass util_obj;
 	
 	@BeforeTest
 	public void start()
@@ -63,8 +64,6 @@ public class BaseTest {
 			e.printStackTrace();
 		}
 
-		 
-		
 
 		if (browserName.equalsIgnoreCase("chrome")) {
 
@@ -91,6 +90,7 @@ public class BaseTest {
 		login_obj = new LoginPage(driver);
 		register_obj = new RegisterPage(driver);
 		pro_sdpObj= new Product_StoreDemoPage(driver);
+		util_obj=new UtilClass();
 		
 		logger.info("Browser Initialised");
 
