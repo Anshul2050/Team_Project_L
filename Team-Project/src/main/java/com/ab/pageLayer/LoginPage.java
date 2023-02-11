@@ -11,36 +11,9 @@ public class LoginPage {
 		
 		PageFactory.initElements(driver, this);
 	}
-	
-	//This is login page functionality check
-		@FindBy(css = "span.mark")
-		WebElement dashBoard;
-		public void dashBoard() {
-			
-			
-			dashBoard.click();
-		}
 
-	@FindBy(xpath = "//a[text()='Log in']")
-	private WebElement login_btn;
-	
-	@FindBy(xpath ="//input[@id='Email']")
-	private WebElement email_txtbx;
-	
-	@FindBy(xpath = "//input[@id='Password']")
-	private WebElement password_txtbx;
-	@FindBy(xpath = "//button[text()='Log in']")
-	private WebElement login_btn1;
-
-	public void clickOnLoginButton()
-	{
-		login_btn.click();
-	}
-	public void enterEmailID(String email)
-	{
-		email_txtbx.sendKeys(email);
 		
-	}
+	
 	public void enterPassword(String password)
 	{
 		password_txtbx.sendKeys(password);
