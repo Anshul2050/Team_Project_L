@@ -38,9 +38,13 @@ public class UtilClass extends BaseTest {
 	}
 	
 	public void waitTillVisible(int duration) {
-		
-		
-		
+			
+	}
+	
+	public void scrollByMethod()
+	{
+		JavascriptExecutor js = (JavascriptExecutor)driver;
+    	js.executeScript("window.scrollBy(0,250)");
 	}
 	
 	public void scrolldown()
