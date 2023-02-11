@@ -9,6 +9,10 @@
           <include name="end"/>
           <include name="launchApplication"/>
           <include name="tearDown"/>
+          <include name="RegisterwithCorrectCredentials"/>
+          <include name="Registerwithblankemail"/>
+          <include name="RegisterwithIncorrectCredentials"/>
+          <include name="RegisterwithIncorrectgmail"/>
           <include name="RegisterwithcorrectCredentials1"/>
         </methods>
       </class> <!-- com.ab.testLayer.RegistrationPageTest -->
