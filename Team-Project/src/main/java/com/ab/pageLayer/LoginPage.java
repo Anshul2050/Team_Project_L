@@ -11,28 +11,14 @@ public class LoginPage {
 		
 		PageFactory.initElements(driver, this);
 	}
-<<<<<<< HEAD
+
 	
-	@FindBy(css = "span.mark")
-	WebElement dashBoard;
-	public void dashBoard() {
-		
-		
-		dashBoard.click();
-	}
-=======
->>>>>>> main
+	
+
 
 		
 	
-	public void enterPassword(String password)
-	{
-		password_txtbx.sendKeys(password);
-	}
-	public void clickOnLoginButton1()
-	{
-		login_btn1.click();
-	}
+	
 	
 
 	
