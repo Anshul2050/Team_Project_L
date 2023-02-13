@@ -1,0 +1,82 @@
+package com.ab.pageLayer;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class RegisterPage {
+
+	public RegisterPage(WebDriver driver) {
+		
+		PageFactory.initElements(driver, this);
+	}
+	
+	@FindBy(xpath="//a[text()='Register']")
+	private WebElement Register_btn;
+	
+	@FindBy(xpath="//input[@id='gender-female']")
+	private WebElement female_radio_btn;
+	
+	@FindBy(xpath="//input[@id='FirstName']")
+	private WebElement enter_first_name;
+	
+	@FindBy(xpath="//input[@id='LastName']")
+	private WebElement enter_last_name;
+	
+	@FindBy(xpath="//option[text()='12']")
+	private WebElement enter_dob;
+	
+	@FindBy(xpath="//option[text()='February']")
+	private WebElement enter_dom;
+	
+	@FindBy(xpath="//option[text()='1994']")
+	private WebElement enter_doy;
+	
+	@FindBy(xpath="//input[@id='Email']")
+	private WebElement enter_email;
+	
+	
+	public void ClickonRegisterButton()
+	{
+		Register_btn.click();
+	}
+	
+	public void SelectGender()
+	{
+		female_radio_btn.click();
+	}
+	
+	public void EnterFirstName()
+	{
+		enter_first_name.sendKeys("Robert");
+	}
+	
+	public void EnterLastName()
+	{
+		enter_last_name.sendKeys("Wilson");
+	}
+	
+	public void ClickonDOB()
+	{
+		enter_dob.click();
+	}
+	
+	public void ClickonDOM()
+	{
+		enter_dom.click();
+	}
+	
+	public void ClickonDOY()
+	{
+		enter_doy.click();
+	}
+	
+	public void EnterEmail()
+	{
+		enter_email.sendKeys("robertwilson@gmail.com");
+	}
+
+	
+	
+}

@@ -1,0 +1,71 @@
+package com.ab.testLayer;
+
+import org.testng.annotations.Test;
+
+import com.ab.BaseTest_team.BaseTest;
+
+
+public class RegistrationPageTest extends BaseTest {
+	
+	@Test
+	public void RegisterwithCorrectCredentials() throws InterruptedException
+	{
+		register_obj.ClickonRegisterButton();
+		Thread.sleep(2000);
+		register_obj.SelectGender();
+		register_obj.EnterFirstName("Robert");
+		register_obj.EnterLastName("Wilson");
+		
+		util_obj.scrolldown();
+		Thread.sleep(2000);
+		register_obj.ClickonDOB();
+		register_obj.ClickonDOM();
+		register_obj.ClickonDOY();
+		register_obj.EnterEmail("robertwilson12@gmail.com");
+		
+		util_obj.scrolldown();
+		Thread.sleep(2000);
+		register_obj.EnterCompany("Amazon India pvt. Ltd.");
+		register_obj.EnterPasswprd("Test@1234");
+		register_obj.EnterRePassword("Test@1234");
+		Thread.sleep(2000);
+		register_obj.ClickonSignup();
+		
+	
+	}
+	@Test
+	public void RegisterwithIncorrectCredentials() 
+	{
+		register_obj.ClickonRegisterButton();
+		try {
+			register_obj.SelectGender();
+			register_obj.EnterFirstName("Robert");
+			register_obj.EnterLastName("Wilson");
+			
+			util_obj.scrolldown();
+			Thread.sleep(2000);
+			register_obj.ClickonDOB();
+			register_obj.ClickonDOM();
+			register_obj.ClickonDOY();
+			register_obj.EnterEmail("robertwilson12@gmail.com");
+			
+			util_obj.scrolldown();
+			Thread.sleep(2000);
+			register_obj.EnterCompany("Amazon India pvt. Ltd.");
+			register_obj.EnterPasswprd("Test@1234");
+			register_obj.EnterRePassword("Test@1234");
+			Thread.sleep(2000);
+			register_obj.ClickonSignup();
+		} 
+		catch (InterruptedException e) 
+		{
+						e.printStackTrace();
+						System.out.println("Login credential is incorrect");
+		}
+		
+		
+	
+	}
+	
+}
+

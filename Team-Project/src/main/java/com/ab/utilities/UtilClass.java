@@ -6,6 +6,7 @@ import java.io.IOException;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver.Window;
 import org.openqa.selenium.io.FileHandler;
 import org.openqa.selenium.support.PageFactory;
 
@@ -44,6 +45,12 @@ public class UtilClass extends BaseTest {
 	{
 		JavascriptExecutor js = (JavascriptExecutor)driver;
     	js.executeScript("window.scrollBy(0,250)");
+	}
+	
+	public void scrolldown()
+	{
+		JavascriptExecutor js=(JavascriptExecutor)driver;
+		js.executeScript("window.scrollBy(0,100)");
 	}
 	
 	

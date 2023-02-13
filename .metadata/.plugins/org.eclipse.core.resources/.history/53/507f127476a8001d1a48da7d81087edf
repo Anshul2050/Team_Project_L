@@ -1,0 +1,11 @@
+package com.ab.testLayer;
+
+import com.ab.BaseTest_team.BaseTest;
+import com.ab.pageLayer.RegisterPage;
+
+public class RegisterationPageTest extends BaseTest {
+	
+	
+	register_obj.
+
+}
