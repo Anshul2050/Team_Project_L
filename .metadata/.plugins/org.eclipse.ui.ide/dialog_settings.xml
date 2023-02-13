@@ -6,7 +6,11 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+<<<<<<< HEAD
+			<item value="C:\Users\AK\eclipse-workspace\Team_Project_L"/>
+=======
 			<item value="E:\software testing notes\GItHub Repositories\Team_Project_L"/>
+>>>>>>> main
 		</list>
 	</section>
 </section>

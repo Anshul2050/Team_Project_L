@@ -6,6 +6,19 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
+      <class name="com.ab.testLayer.RegistrationPageTest">
+        <methods>
+          <include name="start"/>
+          <include name="end"/>
+          <include name="launchApplication"/>
+          <include name="tearDown"/>
+          <include name="RegisterwithCorrectCredentials"/>
+          <include name="Registerwithblankemail"/>
+          <include name="RegisterwithIncorrectCredentials"/>
+          <include name="RegisterwithIncorrectgmail"/>
+          <include name="RegisterwithcorrectCredentials1"/>
+        </methods>
+      </class> <!-- com.ab.testLayer.RegistrationPageTest -->
       <class name="com.ab.testLayer.test">
         <methods>
           <include name="start"/>

@@ -3,15 +3,19 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.ab.testLayer.test">
+      <class name="com.ab.testLayer.RegistrationPageTest">
         <methods>
           <include name="start"/>
           <include name="end"/>
           <include name="launchApplication"/>
           <include name="tearDown"/>
-          <include name="Test1"/>
+          <include name="RegisterwithCorrectCredentials"/>
+          <include name="Registerwithblankemail"/>
+          <include name="RegisterwithIncorrectCredentials"/>
+          <include name="RegisterwithIncorrectgmail"/>
+          <include name="RegisterwithcorrectCredentials1"/>
         </methods>
-      </class> <!-- com.ab.testLayer.test -->
+      </class> <!-- com.ab.testLayer.RegistrationPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

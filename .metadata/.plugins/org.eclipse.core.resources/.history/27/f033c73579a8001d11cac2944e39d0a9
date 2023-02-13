@@ -1,0 +1,11 @@
+package com.ab.testLayer;
+
+import com.ab.BaseTest_team.BaseTest;
+
+
+public class RegistrationPageTest extends BaseTest 
+{
+	
+	
+}
+
